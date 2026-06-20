@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #24353F;
+}
+
+.log-in, .sign-up {
+    width: 60%;
+    height: 60vh;
+    background-color: #24353F;
+    transform: translateX(calc(20% * 100% / 60%)) translateY(50px);
+    box-shadow: 0px 0px 50px 0.1px rgb(0 0 0 / 80%);
+}
+
+.sign-up {
+    height: 65vh;
+}
+
+.log-in h1, .sign-up h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17A2B8;
+    padding-top: 48px;
+    font-weight: 200;
+    font-size: 2.5em;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17px;
+    gap: 1em;
+    align-items: center;
+}
+
+.inputs p {
+    display: none;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+}
+
+.inputs input {
+    padding: 13px;
+    color: white;
+}
+
+.inputs input, .inputs button {
+    width: 90%;
+    height: 6vh;
+    background-color: #24353F;
+    border: solid 0.01px white;
+    border-radius: 0.5vh;
+}
+
+.inputs input::placeholder {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.507);
+}
+
+.inputs input:focus {
+    border-color: #17A2B8;
+    outline: none;
+}
+
+.inputs button {
+    margin-top: 17px;
+    border: solid 0.01px #17A2B8;
+    color: #17A2B8;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.inputs button:hover {
+    background-color: #17A2B8;
+    color: white;
+    cursor: pointer;
+}
+
+.log-in .s-up, .sign-up .l-in {
+    height: 9vh;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.log-in .s-up button, .sign-up .l-in button {
+    border: none;
+    background-color: #24353F;
+    color: white;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.log-in .s-up button:hover, .sign-up .l-in button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main nav {
+    width: 100%;
+    height: 10vh;
+    background-color: #24353F;
+    box-shadow: 0px 0px 50px 0.1px rgb(0 0 0 / 80%);
+    display: flex;
+    justify-content: center;
+    gap: 55em;
+    align-items: center;
+}
+
+.main nav button {
+    background-color: #24353F;
+    border: solid 1px #FFC107;
+    border-radius: 1vh;
+    width: 70px;
+    height: 45px;
+    color: rgba(255, 255, 255, 0.692);
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.main nav button:hover {
+    cursor: pointer;
+    background-color: #FFC107;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+
+.main header {
+    background-color: #24353F;
+    height: 25vh;
+    width: 60vw;
+    position: relative;
+    top: 12em;
+    left: calc(50% - (60vw / 2));
+    box-shadow: 0px 0px 50px 0.1px rgb(0 0 0 / 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #17A2B8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.close {
+    display: none !important;
+}
