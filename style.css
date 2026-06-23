@@ -38,10 +38,8 @@ body {
 }
 
 .inputs p {
-    display: none;
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
-    color: green;
 }
 
 .inputs input {
