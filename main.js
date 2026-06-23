@@ -105,18 +105,18 @@ signButton.onclick = function() {
 
 ////////////////////////////////////////////////////////////////////////////////////////
 
-email2 = document.getElementById("lEmail");
-pass2 = document.getElementById("lPass");
+let email2 = document.getElementById("lEmail");
+let pass2 = document.getElementById("lPass");
 let loginButton = document.getElementById("log-in");
 
 loginButton.onclick = function() {
     if (email2.value.substr(email2.value.length - 10) != "@gmail.com" || email2.value.length <= 10) {
-        suc.style.color = "red";
-        suc.innerHTML = "Enter a valid Email";
+        suc2.style.color = "red";
+        suc2.innerHTML = "Enter a valid Email";
     }
     else if (pass2.value.length < 8) {
-        suc.style.color = "red";
-        suc.innerHTML = "Passworg must be at least 8 letters";
+        suc2.style.color = "red";
+        suc2.innerHTML = "Passworg must be at least 8 letters";
     }
     else {
         let nm = "";
